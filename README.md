@@ -1,9 +1,13 @@
 s = 'cgrylgnd'
+
 myStr = ''
+
 largestStr = ''
+
 integer = 0
 
 for count in range(1,len(s)):
+    
     if s[count]>=s[count-1]:
         myStr += s[count-1]
         integer += 1
@@ -22,6 +26,7 @@ for count in range(1,len(s)):
             myStr = ''
 
 if largestStr == '':
+    
     largestStr = s[0]
  
 print (largestStr)
